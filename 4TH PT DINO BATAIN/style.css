@@ -1,0 +1,107 @@
+*{
+ 
+ font-family: cursive;
+  box-sizing: border-box;
+  
+}
+
+
+h1{
+  font-family: cursive;
+  color: white;
+  
+
+}
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(evening.png);
+ 
+  }
+
+
+.login-form{
+  width: 400px;
+  height: 555px;
+  padding: 50px 50px;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-image: url(dindo.png); 
+  
+}
+
+.login-form h1{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.txtb{
+  border-bottom: 2px solid white;
+  position: relative;
+  margin: 30px 0;
+}
+
+.txtb input{
+  font-size: 15px;
+  color: white;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.txtb span::before{
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+
+.focus + span::before{
+  
+}
+.focus + span::after{
+  width: 100%;
+}
+
+.logbtn{
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: black;
+  background-size: 200%;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 20px;
+  border-radius: 2px;
+  
+}
+
+.logbtn:hover{
+  background-position: right;
+  }
+  
+.bottom-text{
+  margin-top: 23px;
+  text-align: center;
+  font-size: 13px;
+}
+
+div{
+  color: white;
+  font: fantasy;
+
+}
